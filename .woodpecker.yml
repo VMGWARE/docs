@@ -1,0 +1,20 @@
+when:
+  event: [push, tag]
+  branch: [main]
+  path:
+    exclude: [README.md, LICENSE, .github, .gitignore]
+
+variables:
+  - &node_image "node:18"
+
+steps:
+  Deploy to CapRover:
+    image: *node_image
+    secrets: [caprover_password, caprover_url, caprover_name]
+    commands:
+      - npm install -g caprover
+      - caprover login
+      - caprover deploy -n caprover -a vmgware-docs -b master
+    when:
+      event: [push, tag]
+      branch: main
