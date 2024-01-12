@@ -1,10 +1,10 @@
-# Explaining the Different Environment Variables
+# Environment Variables
 
 ## Overview
 
 Environment variables in Camphouse are essential for configuring the application's runtime environment. They allow you to set up the application without hardcoding sensitive details like database credentials and secret keys.
 
-## Variables Description
+## Backend Variables
 
 ### Application Configuration
 
@@ -51,6 +51,14 @@ Environment variables in Camphouse are essential for configuring the application
 ### General Configuration
 
 - `BLOCKED_IPS`: A list of IP addresses to block from accessing the application, useful for banning malicious users.
+
+## Frontend Configuration
+
+- `VUE_APP_GIT_VERSION`: This variable is used to specify the current version of the application, often linked to the Git commit hash. It helps in keeping track of the deployed version of the frontend application.
+
+- `VUE_APP_EXCEPTIONLESS_API_KEY`: The API key for Exceptionless. This is used in the frontend to integrate Exceptionless for frontend error monitoring and reporting. It's essential for tracking frontend exceptions and improving user experience.
+
+- `VUE_APP_EXCEPTIONLESS_SERVER_URL`: The server URL for Exceptionless. This accompanies the API key and is used to configure the endpoint where frontend error data is sent. It ensures that all frontend errors are properly reported and logged in your Exceptionless dashboard.
 
 ## Best Practices
 
