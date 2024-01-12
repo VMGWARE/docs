@@ -1,2 +1,3 @@
-# docs
-The docs for VMG Ware and it's projects
+# VMG Ware Docs
+
+Documentation for VMG Ware and our projects.
