@@ -17,4 +17,4 @@ steps:
       - caprover deploy -n caprover -a vmgware-docs -b master
     when:
       event: [push, tag]
-      branch: main
+      branch: master
