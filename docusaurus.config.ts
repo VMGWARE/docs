@@ -26,6 +26,12 @@ const config: Config = {
           position: "left",
           label: "Camphouse",
         },
+        // vATC Suite
+        {
+          to: "/vatcsuite/intro",
+          position: "left",
+          label: "vATC Suite",
+        },
       ],
     },
     footer: {
@@ -102,6 +108,15 @@ const config: Config = {
         id: "camphouse",
         path: "camphouse",
         routeBasePath: "camphouse",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "content-docs",
+      {
+        id: "vatcsuite",
+        path: "vatcsuite",
+        routeBasePath: "vatcsuite",
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
