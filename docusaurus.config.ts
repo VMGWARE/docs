@@ -20,27 +20,38 @@ const config: Config = {
         src: "img/logo.svg",
       },
       items: [
+        {
+          type: "doc",
+          docId: "intro",
+          activeBaseRegex: "docs",
+          position: "left",
+          label: "Docs",
+        },
         // Camphouse
         {
-          to: "/camphouse/intro",
+          to: "/docs/camphouse/intro",
+          activeBaseRegex: "docs/camphouse",
           position: "left",
           label: "Camphouse",
         },
         // vATC Suite
         {
-          to: "/vatcsuite/intro",
+          to: "/docs/vatc-suite/intro",
+          activeBaseRegex: "docs/vatc-suite",
           position: "left",
           label: "vATC Suite",
         },
         // JS Validator
         {
-          to: "/js-validator/intro",
+          to: "/docs/js-validator/intro",
+          activeBaseRegex: "docs/js-validator",
           position: "left",
           label: "JS Validator",
         },
         // JS Logger
         {
-          to: "/js-logger/intro",
+          to: "/docs/js-logger/intro",
+          activeBaseRegex: "docs/js-logger",
           position: "left",
           label: "JS Logger",
         },
@@ -114,42 +125,6 @@ const config: Config = {
         };
       },
     }),
-    [
-      "content-docs",
-      {
-        id: "camphouse",
-        path: "camphouse",
-        routeBasePath: "camphouse",
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
-    [
-      "content-docs",
-      {
-        id: "vatcsuite",
-        path: "vatcsuite",
-        routeBasePath: "vatcsuite",
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
-    [
-      "content-docs",
-      {
-        id: "jsvalidator",
-        path: "js-validator",
-        routeBasePath: "js-validator",
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
-    [
-      "content-docs",
-      {
-        id: "jslogger",
-        path: "js-logger",
-        routeBasePath: "js-logger",
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
   ],
   themes: [
     [
