@@ -32,6 +32,18 @@ const config: Config = {
           position: "left",
           label: "vATC Suite",
         },
+        // JS Validator
+        {
+          to: "/js-validator/intro",
+          position: "left",
+          label: "JS Validator",
+        },
+        // JS Logger
+        {
+          to: "/js-logger/intro",
+          position: "left",
+          label: "JS Logger",
+        },
       ],
     },
     footer: {
@@ -117,6 +129,24 @@ const config: Config = {
         id: "vatcsuite",
         path: "vatcsuite",
         routeBasePath: "vatcsuite",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "content-docs",
+      {
+        id: "jsvalidator",
+        path: "js-validator",
+        routeBasePath: "js-validator",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "content-docs",
+      {
+        id: "jslogger",
+        path: "js-logger",
+        routeBasePath: "js-logger",
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
