@@ -55,6 +55,13 @@ const config: Config = {
           position: "left",
           label: "JS Logger",
         },
+        // GitHub
+        {
+          href: "https://github.com/vmgware",
+          position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub",
+        },
       ],
     },
     footer: {
