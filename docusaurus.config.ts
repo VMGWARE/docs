@@ -55,6 +55,13 @@ const config: Config = {
           position: "left",
           label: "JS Logger",
         },
+        // Container Echoes
+        {
+          to: "/docs/container-echoes/intro",
+          activeBaseRegex: "docs/container-echoes",
+          position: "left",
+          label: "Container Echoes",
+        },
         // GitHub
         {
           href: "https://github.com/vmgware",
